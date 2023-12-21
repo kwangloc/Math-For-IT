@@ -41,11 +41,23 @@ def convex_hull(points):
     
     return convex_hull
 
+def calculate_polygon_area(vertices):
+    n = len(vertices)
+    if n < 3:
+        print("A polygon with at least three vertices is required.")
+        return None
+
+    # Applying Shoelace Formula to calculate the area
+    area = 0.5 * sum((vertices[i][0] * vertices[(i + 1) % n][1] - vertices[(i + 1) % n][0] * vertices[i][1]) for i in range(n))
+
+    return abs(area)
+
 def main():
-    # points = [(1, 7), (2, 6), (3, 2), (5, 8), (7, 5), (8, 1), (9, 8)]
     points = [(4, 5), (6,4), (7,6), (8,7), (9,8), (5,10), (4,9), (5,9), (8,11), (8,5)]
     convex_hull_points = convex_hull(points)
     print("Toa do cac diem bao loi:", convex_hull_points)
+    area = calculate_polygon_area(convex_hull_points)
+    print("Dien tich: ", area)
 		
 if __name__ == "__main__":
     main()
