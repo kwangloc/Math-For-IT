@@ -1,0 +1,56 @@
+***25/8
+- GK,CK: thi tren mt
+Ch1:
+Ch2: DSTT
+Ch3: hinh hoc 
+	ung dung trong xu ly anh
+Ch4: toi uu
+	Giai 1 cach chinh xac
+	Giai gan dung (su dung trong ML)
+
+Ch5: xác suất
+	- 1 câu Markov
+CHUONG 1: number theory
+Hàm số Euler: bài tập thi: tính phi(n) với n lớn
+	
+***8/9
+- 
+***15/9
+PHÂN RÃ MA TRẬN
+- A: mt thể hiện khuôn mặt
+
+***29/9
+- closest pair of points nlogn
+https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/
+https://www.geeksforgeeks.org/closest-pair-of-points-onlogn-implementation/
+https://www.youtube.com/watch?v=ldHA8UcQI9Q&ab_channel=Insidecode
+
+
+***1/12
+ĐỐI NGẪU -> KO THIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+Slide 36 - 37: đối ngẫu dạng 2
+
+Sơ đồ Tucker: 
+
+
+CHỦ NHẬT: ÔN+BÁO CÁO LIÊN QUAN CHUYÊN ĐỀ XÁC SUẤT
+
+***Thuyết trình XÁC SUẤT
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
