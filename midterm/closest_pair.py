@@ -1,5 +1,11 @@
 import math
 
+def main():
+    points = [(4, 5), (6, 4), (8, 5), (9, 8), (8, 11), (5, 10), (4, 9)]
+    closest_pair, distance = closest_pair_divide_and_conquer(points)
+    print("Closest pair:", closest_pair)
+    print("Distance:", distance)
+
 def euclidean_distance(point1, point2):
     return math.sqrt((point1[0] - point2[0]) ** 2 + (point1[1] - point2[1]) ** 2)
 
@@ -80,7 +86,5 @@ def closest_pair_in_strip(strip, min_distance):
 
     return closest_strip_pair, min_strip_distance
 
-points = [(4, 5), (6, 4), (8, 5), (9, 8), (8, 11), (5, 10), (4, 9)]
-closest_pair, distance = closest_pair_divide_and_conquer(points)
-print("Closest pair:", closest_pair)
-print("Distance:", distance)
+if __name__ == "__main__":
+    main()

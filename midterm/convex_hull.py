@@ -1,3 +1,10 @@
+def main():
+    points = [(4, 5), (6,4), (7,6), (8,7), (9,8), (5,10), (4,9), (5,9), (8,11), (8,5)]
+    convex_hull_points = convex_hull(points)
+    print("Toa do cac diem bao loi:", convex_hull_points)
+    area = calculate_polygon_area(convex_hull_points)
+    print("Dien tich: ", area)
+
 def orientation(p, q, r): # hướng tạo thành của 3 điểm
     # -1 rẽ trái
     # 0 thẳng hàng
@@ -52,13 +59,6 @@ def calculate_polygon_area(vertices):
 
     return abs(area)
 
-def main():
-    points = [(4, 5), (6,4), (7,6), (8,7), (9,8), (5,10), (4,9), (5,9), (8,11), (8,5)]
-    convex_hull_points = convex_hull(points)
-    print("Toa do cac diem bao loi:", convex_hull_points)
-    area = calculate_polygon_area(convex_hull_points)
-    print("Dien tich: ", area)
-		
 if __name__ == "__main__":
     main()
 
