@@ -1,9 +1,9 @@
 import numpy as np
 
 def main():
-    initial_x = 0.0 # điểm bắt đầu
-    learning_rate = 0.1
-    momentum = 0.9
+    initial_x = -1.0 # điểm bắt đầu
+    learning_rate = 0.001
+    momentum = 0.5
     N_loops = 1000
     epsilon = 1e-5 # sai số
 
@@ -13,10 +13,10 @@ def main():
     print("Minimum value of f(x):", min_value)
 
 def f(x):
-    return np.exp(x) + 2 * (x - 1)**2
+    return 2 * np.log(2 * x**2 + 1) + 9 * x + 3 * np.exp(x**2) - 5
 
 def df(x):
-    return np.exp(x) + 4 * (x - 1)
+    return (8 * x / (2 * x**2 + 1)) + 9 + 6 * x * np.exp(x**2)
 
 def gradient_descent_with_momentum(initial_x, learning_rate=0.01, momentum=0.9, N_loops=1000, epsilon=1e-6):
     x = initial_x
@@ -30,7 +30,7 @@ def gradient_descent_with_momentum(initial_x, learning_rate=0.01, momentum=0.9, 
         x_old = x
         x = x - velocity
         if np.abs(x - x_old) < epsilon:
-            print(f"Converged after {i+1} iterations.")
+            print(f"Tìm được x min sau {i+1} vòng lặp.")
             break
         x_history.append(x)
 

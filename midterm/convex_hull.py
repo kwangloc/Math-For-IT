@@ -1,5 +1,5 @@
 def main():
-    points = [(4, 5), (6,4), (7,6), (8,7), (9,8), (5,10), (4,9), (5,9), (8,11), (8,5)]
+    points = [(2, 5), (3, 7), (4, 3), (2, 9), (6, 12), (7, 16), (8, 3), (9, 8), (10, 7), (11, 12)]
     convex_hull_points = convex_hull(points)
     print("Toa do cac diem bao loi:", convex_hull_points)
     area = calculate_polygon_area(convex_hull_points)
@@ -51,12 +51,11 @@ def convex_hull(points):
 def calculate_polygon_area(vertices):
     n = len(vertices)
     if n < 3:
-        print("A polygon with at least three vertices is required.")
+        print("Cần it nhất 3 điểm để tính diện tích!")
         return None
 
-    # Applying Shoelace Formula to calculate the area
+    # Công thức Shoelace Formula để tính diện tích bao lồi
     area = 0.5 * sum((vertices[i][0] * vertices[(i + 1) % n][1] - vertices[(i + 1) % n][0] * vertices[i][1]) for i in range(n))
-
     return abs(area)
 
 if __name__ == "__main__":

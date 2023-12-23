@@ -43,3 +43,24 @@ dai so tuyen tinh
 hinh hoc
 toi uu (3pp gradient, momentum,) quan trong nhat
 xac suat
+
+
+
+
+https://machinelearningcoban.com/2017/06/07/svd/#-singular-value-decomposition
+
+https://machinelearningcoban.com/2017/01/16/gradientdescent2/#-cac-thuat-toan-toi-uu-gradient-descent
+
+
+
+
+
+
+
+
+
+
+
+
+
+

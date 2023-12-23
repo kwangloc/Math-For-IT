@@ -23,30 +23,9 @@ def svd_decomposition(matrix):
     return U, singular_values, Vt.T
 
 def main():
-    matrix2 = np.array([[1, -0.8],
-                       [0, 1],
-                       [1, 0]])
-    
-    matrix = np.array([[2, -1],
-                       [2, 2],])
-    
-    # matrix = np.array([
-    #     [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [2, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [0, 2, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [0, 0, 2, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [0, 0, 0, 2, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [0, 0, 0, 0, 2, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [0, 0, 0, 0, 0, 2, 5, 2, 0, 0, 0, 0, 0, 0, 0],
-    #     [0, 0, 0, 0, 0, 0, 2, 5, 2, 0, 0, 0, 0, 0, 0],
-    #     [0, 0, 0, 0, 0, 0, 0, 2, 5, 2, 0, 0, 0, 0, 0],
-    #     [0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 2, 0, 0, 0, 0],
-    #     [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 2, 0, 0, 0],
-    #     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 2, 0, 0],
-    #     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 2, 0],
-    #     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 2],
-    #     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5]
-    # ])
+    matrix = np.array([[1, 2, 3],
+                       [1, 2, 4],
+                       [1, 2, 5]])
 
     U, S, V = svd_decomposition(matrix)
 
@@ -61,7 +40,7 @@ def main():
     # print(U)
     for i in range(len(U)):
         for j in range(len(U[0])):
-            print(round(U[i][j], 3), end="  ")
+            print(round(U[i][j], 5), end="  ")
         print()
 
     print("\nD (Singular Values) matrix:")
@@ -69,7 +48,7 @@ def main():
     D = np.diag(S)
     for i in range(len(D)):
         for j in range(len(D[0])):
-            print(round(D[i][j], 3), end="  ")
+            print(round(D[i][j], 5), end="  ")
         print()
 
 
@@ -77,7 +56,7 @@ def main():
     # print(V)
     for i in range(len(V)):
         for j in range(len(V[0])):
-            print(round(V[i][j], 3), end="\t")
+            print(round(V[i][j], 5), end="\t")
         print()
 
 if __name__ == "__main__":
