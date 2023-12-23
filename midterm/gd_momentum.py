@@ -29,6 +29,7 @@ def gradient_descent_with_momentum(initial_x, learning_rate=0.01, momentum=0.9, 
         velocity = momentum * velocity + learning_rate * gradient
         x_old = x
         x = x - velocity
+        
         if np.abs(x - x_old) < epsilon:
             print(f"Tìm được x min sau {i+1} vòng lặp.")
             break
